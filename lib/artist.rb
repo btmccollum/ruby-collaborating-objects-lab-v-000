@@ -46,11 +46,10 @@ class Artist
     @songs.each {|x| puts "#{x.name}\n"}
   end
 
-  #When save is called on the instance it gets pushed 
+  #When save is called on the instance it gets pushed
   #into the class variable @@all to record that its
   #creation
   def save
     self.class.all << self
   end
 end
-
