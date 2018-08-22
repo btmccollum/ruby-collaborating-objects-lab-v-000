@@ -7,7 +7,6 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
-    self.save
   end
 
   def self.find_or_create_by_name(artist)
@@ -31,7 +30,7 @@ class Artist
   end
 
   def print_songs
-    @songs.each {|x| x.name}
+    @songs.each {|x| "#{x.name}"}
   end
 
   def save
