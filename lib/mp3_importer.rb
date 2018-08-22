@@ -7,11 +7,11 @@ class MP3Importer
   end
 
   def files
-    Dir.entries("./db/mp3s").each {|x| Song.new_by_filename(x)}
+    Dir.entries("./db/mp3s").each {|x| puts x}
   end
 
   def import
-
+    Song.new_by_filename(x)
   end
 
 end
