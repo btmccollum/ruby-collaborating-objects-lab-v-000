@@ -11,7 +11,7 @@ class MP3Importer
   def files
     # @@files << Dir.entries("./db/mp3s").each {|x| "#{x}"}
     # binding.pry
-    Dir.entries("./spec/fixtures/mp3s").reject {|x| x.include?("mp3")}
+    Dir.entries("./spec/fixtures/mp3s").select {|x| x.include?("mp3")}
   end
 
   def self.files
