@@ -10,6 +10,7 @@ class MP3Importer
 
   def files
     # @@files << Dir.entries("./db/mp3s").each {|x| "#{x}"}
+    binding.pry
     Dir.entries("./spec/fixtures/mp3s")
   end
 
