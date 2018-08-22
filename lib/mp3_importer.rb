@@ -13,7 +13,7 @@ class MP3Importer
   end
 
   #uses the mp3 array created by the files instance method to pass the
-  #songs to the Song class new_by_filename method for creation
+  #songs to the Song class' #new_by_filename for creation
   def import
     files.each {|song_filename| Song.new_by_filename(song_filename)}
   end
