@@ -6,7 +6,8 @@ class MP3Importer
     @path = path
   end
 
-  #parses through the directory provided and creates an array of only mp3 files
+  #parses through the directory provided at instantiation
+  #and creates an array of only mp3 files
   def files
     Dir.entries("#{path}").select {|song_filename| song_filename.include?("mp3")}
   end
