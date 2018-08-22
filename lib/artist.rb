@@ -1,7 +1,6 @@
-require 'pry'
+
 class Artist
   attr_accessor :name, :songs
-
   @@all = []
 
   #Upon instantiation a new artist will be assigned a name

@@ -9,8 +9,8 @@ class Song
   end
 
   #this instance method will check to see if the name
-  #provided is assigned to the song being check, and 
-  #if not it will create/assign a new artist class 
+  #provided is assigned to the song being check, and
+  #if not it will create/assign a new artist class
   def artist_name=(name)
     if (self.artist.nil?)
       self.artist = Artist.new(name)
@@ -19,9 +19,9 @@ class Song
     end
   end
 
-  #when passed a filename it will create a new instance 
-  #of the song class by pulling out the song name, and 
-  #uses #artist_name= to assign/create an artist, saves 
+  #when passed a filename it will create a new instance
+  #of the song class by pulling out the song name, and
+  #uses #artist_name= to assign/create an artist, saves
   #it to the Artist class variable array and returns it
   def self.new_by_filename(filename)
     song = self.new(filename.split(/[-\.]/)[1].strip)
