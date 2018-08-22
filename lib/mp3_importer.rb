@@ -2,7 +2,7 @@ class MP3Importer
 
   attr_accessor :path
 
-  def initialize(path) #initializes with a file path 
+  def initialize(path) #initializes with a file path
     @path = path
   end
 
@@ -11,7 +11,7 @@ class MP3Importer
   end
 
   def import
-    
+
   end
 
 end
