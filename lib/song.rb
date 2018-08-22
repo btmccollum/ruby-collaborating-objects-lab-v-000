@@ -22,7 +22,7 @@ class Song
     song = self.new(filename.split(/[-\.]/)[1].strip)
     song.artist_name= (filename.split(/[-\.]/)[0].strip)
     song.artist.add_song(song)
-    song.save
+    song.artist.save
     song
   end
 end
