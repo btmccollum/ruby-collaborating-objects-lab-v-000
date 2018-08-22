@@ -8,7 +8,7 @@ class MP3Importer
 
   #parses through the directory provided and creates an array of only mp3 files
   def files
-    Dir.entries("./spec/fixtures/mp3s").select {|song_filename| song_filename.include?("mp3")}
+    Dir.entries("#{path}").select {|song_filename| song_filename.include?("mp3")}
   end
 
   #uses the mp3 array created by the files instance method to pass the
