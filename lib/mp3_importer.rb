@@ -9,7 +9,7 @@ class MP3Importer
   end
 
   def files
-    Dir.entries("./db/mp3s").each {|x| puts x}
+    @@files << Dir.entries("./db/mp3s").each {|x| "{x}"}
   end
 
   def self.files
