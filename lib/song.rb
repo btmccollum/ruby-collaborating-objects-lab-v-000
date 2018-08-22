@@ -21,7 +21,7 @@ class Song
     # binding.pry
     song = self.new(filename.split(/[-\.]/)[1].strip)
     song.artist_name = (filename.split(/[-\.]/)[0].strip)
-    song.artist.add_song(self)
+    song.artist.add_song(song)
     song.save
     song
   end
