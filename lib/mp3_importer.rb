@@ -10,7 +10,7 @@ class MP3Importer
 
   def files
     # @@files << Dir.entries("./db/mp3s").each {|x| "#{x}"}
-    binding.pry
+    # binding.pry
     Dir.entries("./spec/fixtures/mp3s").delete_if {|x| x.include?("mp3")}
   end
 
