@@ -1,6 +1,6 @@
 
 class Artist
-  attr_accessor :name
+  attr_accessor :name, :songs
   @@all = []
 
   #Upon instantiation a new artist will be assigned a name
@@ -27,11 +27,11 @@ class Artist
     @@all
   end
 
-  #the songs instance method will allow access to the
-  #instance's list of known songs
-  def songs
-    @songs
-  end
+  # #the songs instance method will allow access to the
+  # #instance's list of known songs
+  # def songs
+  #   @songs
+  # end
 
   #add_song will add a specified song to that artist's
   #array of songs
